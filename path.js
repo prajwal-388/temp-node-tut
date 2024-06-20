@@ -1,0 +1,7 @@
+const path=require("path")
+console.log(path.sep)
+const filePath=path.join('/Content','SubFolder','text.txt')
+console.log(filePath)
+const baseName=path.basename(filePath)
+console.log(baseName)
+console.log(path.resolve(__dirname,'Content','SubFolder','text.txt'))

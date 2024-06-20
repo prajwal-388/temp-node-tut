@@ -1,0 +1,5 @@
+const {readFileSync,writeFileSync}=require("fs")
+const firstFile=readFileSync("./Content/first.txt",'utf8')
+const SecondFile=readFileSync("./Content/second.txt",'utf8')
+console.log(firstFile,SecondFile)
+writeFileSync('./Content/result.txt',`the result ${firstFile},${SecondFile} `,{flag:"a"})
